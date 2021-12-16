@@ -1,0 +1,17 @@
+using System;
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var x = Console.ReadLine();
+            string[] split = x.Split(new Char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int i = 0;
+            foreach (string s in split)
+            {
+                if (char.ToLower(s[0]) == 'а' || char.ToLower(s[0]) == 'А')
+                    i++;
+            }
+            Console.WriteLine(i);
+            Console.ReadLine();
+        }
+    }
