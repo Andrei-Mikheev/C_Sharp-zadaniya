@@ -1,0 +1,15 @@
+using System;
+class Program {
+  public static void Main (string[] args) {
+    int c = 0;
+    for (int i = 120; i <= 140; i++) {
+      for (int a = 1; a <= i; a++) {
+        if (i % a == 0) {
+          c++;
+        }
+      }
+      Console.WriteLine($"Число делителей {i} - {c}");
+      c = 0;
+    }
+  }
+}
