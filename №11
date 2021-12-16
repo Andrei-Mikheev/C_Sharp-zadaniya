@@ -1,0 +1,14 @@
+using System;
+class Program {
+  static void Main(string[] args) {
+    string text = Console.ReadLine();
+    int c = 0;
+    for (int i = 0; i < text.Length; i++) {
+      if (text[i] == '.') {
+        c++;
+      }
+    }
+    Console.WriteLine(text.Replace(".", ""));
+    Console.WriteLine($"Число точек: {c}");
+  }
+}
