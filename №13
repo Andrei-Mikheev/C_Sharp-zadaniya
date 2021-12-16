@@ -1,0 +1,9 @@
+using System;
+class Program{
+    static void Main()
+    {
+        string text = Convert.ToString(Console.ReadLine());
+        var txt = text.ToUpper();
+        Console.WriteLine(txt);
+    }
+}
