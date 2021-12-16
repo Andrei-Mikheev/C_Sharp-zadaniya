@@ -1,7 +1,5 @@
 using System;
-namespace Console1
-{
-    class Program
+class Program
     {
         static void Main(string[] args)
         {
@@ -17,4 +15,4 @@ namespace Console1
             }
         }
     }
-}
+
