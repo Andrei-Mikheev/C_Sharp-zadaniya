@@ -1,0 +1,24 @@
+using System;
+class Program {
+  static void Perimeter(int a, int b, int c) {
+    int p = a + b + c;
+  }
+  static void Main(string[] args) {
+    Perimeter(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+  }
+}
+
+Изменённая задача:
+
+using System;
+class Program {
+  static int Perimeter(int a, int b, int c) {
+    int p = a + b + c;
+    return p;
+  }
+  static void Main(string[] args) {
+    Console.WriteLine("Введите значения для трех сторон треугольника");
+    int d = Perimeter(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+    Console.WriteLine($"Периметр: {d}");
+  }
+}
